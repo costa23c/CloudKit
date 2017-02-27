@@ -1,0 +1,16 @@
+.widget-serial2 .serial2-display {
+    height: 80px;
+    overflow: auto;
+}
+
+.widget-serial2 .serial2-display p{
+    margin: 0;
+}
+
+.widget-serial2 .serial2-in {
+    color: red;
+}
+
+.widget-serial2 .serial2-out {
+    color: blue;
+}

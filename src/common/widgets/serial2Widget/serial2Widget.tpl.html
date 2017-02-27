@@ -1,0 +1,12 @@
+<div class="widget-serial2">
+    <div class="well well-sm serial2-display"
+        timestamp-tooltip="last_received_timestamp"></div>
+    <div class="input-group">
+      <input type="text" class="form-control" ng-model="serial2OutText" placeholder="Enter text..."
+      ui-keypress="{'enter': 'serial2EnterKeypress($event)'}" ng-disabled="data_sending">
+      <span class="input-group-btn">
+        <button ng-click="sendText(serial2OutText)" ng-disabled="data_sending || !(serial2OutText.length)"
+        class="btn btn-default" type="button" id="serial2-input-btn" placeholder="Enter text to send over serial2...">Send</button>
+      </span>
+    </div>
+</div>
